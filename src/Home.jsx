@@ -1,9 +1,14 @@
 import React from 'react'
+import SideBar from './utils/SideBar'
+import Navbar from './utils/Navbar'
+import { Outlet } from 'react-router-dom'
 
 const Home = () => {
   return (
     <div>
-      <h1 className='text-xl font-bold flex justify-center mt-10'>Home</h1>
+      {/* <Navbar />
+      <SideBar /> */}
+      <Outlet />
     </div>
   )
 }
